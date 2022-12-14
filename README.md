@@ -40,6 +40,11 @@ Copy files turtlebot3_burger.urdf.xacro and turtlebot3_burger.gazebo.xacro from 
 ```ruby
 cd ..
 ```
+Then paste the project.launch in any ROS package
+
+```ruby
+cd ..
+```
 Build the ROS packages
 ```ruby
 catkin_make
@@ -47,6 +52,17 @@ catkin_make
 ```ruby
 source /devel/setup.bash
 ```
+```ruby
+roslaunch -YOURROSPACKAGE- project.launch
+```
+Paste EKF.py to any folder
+cd to that folder
+
+```ruby
+python3 EKF.py
+```
+
+
 
 PS: install slam_gmapping package before running the gmapping.launch
 ```ruby
